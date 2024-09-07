@@ -1,0 +1,87 @@
+[
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622461/Airbnb-Clone/Svg%20Icons/Pool-Ladder--Streamline-Plump_vrkz0a.svg",
+        "icon_label": "Amazing pools",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622461/Airbnb-Clone/Svg%20Icons/Key--Streamline-Heroicons-Outline_jt9ifa.svg",
+        "icon_label": "New",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622461/Airbnb-Clone/Svg%20Icons/Umbrella-2-Line--Streamline-Mingcute_vqdfkd.svg",
+        "icon_label": "Beach",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622461/Airbnb-Clone/Svg%20Icons/Palm-Tree--Streamline-Carbon_ssrt7z.svg",
+        "icon_label": "Tropical",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622460/Airbnb-Clone/Svg%20Icons/Chef-Toque-Hat--Streamline-Plump_dktpku.svg",
+        "icon_label": "Chef's kitchens",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622460/Airbnb-Clone/Svg%20Icons/Farm--Streamline-Phosphor_tcll7m.svg",
+        "icon_label": "Farm",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622460/Airbnb-Clone/Svg%20Icons/Castle--Streamline-Lucide_ezozd6.svg",
+        "icon_label": "Castle",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622459/Airbnb-Clone/Svg%20Icons/Surfboard-Line--Streamline-Mingcute_vnuddi.svg",
+        "icon_label": "Surfing",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622459/Airbnb-Clone/Svg%20Icons/Beach--Streamline-Plump_kqahvr.svg",
+        "icon_label": "Island",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622459/Airbnb-Clone/Svg%20Icons/Tent-Tree--Streamline-Lucide_gzrkje.svg",
+        "icon_label": "Camping",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622459/Airbnb-Clone/Svg%20Icons/Caravan--Streamline-Atlas_t8r0mv.svg",
+        "icon_label": "Camper",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622458/Airbnb-Clone/Svg%20Icons/Sail-Boat--Streamline-Atlas_ptq4tf.svg",
+        "icon_label": "Boat",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622458/Airbnb-Clone/Svg%20Icons/Cactus-Light--Streamline-Phosphor_rwqmlu.svg",
+        "icon_label": "Desert",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622458/Airbnb-Clone/Svg%20Icons/Building-Office--Streamline-Phosphor_qctnl5.svg",
+        "icon_label": "Top cities",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622458/Airbnb-Clone/Svg%20Icons/Hut--Streamline-Atlas_exfslh.svg",
+        "icon_label": "Cabin",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622457/Airbnb-Clone/Svg%20Icons/Leaning-Tower--Streamline-Atlas_i8denp.svg",
+        "icon_label": "Tower",
+        "icon_category": ["Tag"]
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622457/Airbnb-Clone/Svg%20Icons/Tea-Cup--Streamline-Solar-Ar_jry8mr.svg",
+        "icon_label": "Breakfasts",
+        "icon_category": ["Tag"]
+    }
+]
