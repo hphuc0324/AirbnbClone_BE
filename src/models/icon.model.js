@@ -13,11 +13,6 @@ const iconSchema = Schema(
             type: String,
             required: true,
         },
-        icon_category: {
-            type: Array,
-            required: true,
-            default: [],
-        },
     },
     {
         collection: COLLECTION_NAME,

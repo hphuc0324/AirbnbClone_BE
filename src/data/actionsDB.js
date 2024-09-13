@@ -4,6 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const { host, name } = require('../configs/config.mongodb');
 const dataField = require('./dataField');
+const tagModel = require('../models/tag.model');
 
 const connectString = `${host}/${name}?retryWrites=true&w=majority`;
 
@@ -99,5 +100,13 @@ const run = async () => {
 
     process.exit();
 };
+
+// const testRetrieving = async () => {
+//     const data = await tagModel.find().populate({ path: 'tag_icon', select: ['icon_label', 'icon_url'] });
+
+//     console.log(data);
+// };
+
+// testRetrieving();
 
 run();
