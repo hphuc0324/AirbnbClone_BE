@@ -5,6 +5,11 @@ const DOCUMENT_NAME = 'User';
 
 const userSchema = new Schema(
     {
+        user_uid: {
+            type: String,
+            required: true,
+            unique: true,
+        },
         user_name: {
             type: String,
             required: true,

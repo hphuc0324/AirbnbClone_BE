@@ -1,7 +1,7 @@
 const httpStatusCodes = require('./httpStatusCode');
 const statusDescription = require('./statusDescription');
 
-class SuccessRespone {
+class SuccessResponse {
     constructor({ message, statusCode = httpStatusCodes.OK, reasonStatusCode = statusDescription.OK, metadata = {} }) {
         this.message = !message ? reasonStatusCode : message;
         this.status = statusCode;
@@ -19,7 +19,7 @@ class OK extends SuccessResponse {
     }
 }
 
-class CREATED extends SuccessRespone {
+class CREATED extends SuccessResponse {
     constructor({
         options = {},
         message,
@@ -35,5 +35,5 @@ class CREATED extends SuccessRespone {
 module.exports = {
     OK,
     CREATED,
-    SuccessRespone,
+    SuccessResponse,
 };
