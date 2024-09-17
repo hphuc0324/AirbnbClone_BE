@@ -5,7 +5,6 @@ const authentication = async (req, res, next) => {
     const token = req.headers.authorization?.split('Bearer ')[1];
 
     if (!token) {
-        console.log('Authentication failed');
         throw new AuthFailureError();
     }
 
@@ -15,7 +14,7 @@ const authentication = async (req, res, next) => {
         throw new ForbiddenRequest();
     }
 
-    req.uid = decodedToken.uid;
+    req.user = { uid: decodedToken.uid, name: decodedToken.name, email: decodedToken.email };
     next();
 };
 

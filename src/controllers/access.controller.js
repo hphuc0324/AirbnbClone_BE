@@ -4,13 +4,13 @@ const { AuthFailureError } = require('../constants/error.respone');
 
 class AccessController {
     login = async (req, res) => {
-        const { uid } = req.user;
+        const user = req.user;
 
-        if (!uid) {
+        if (!user.uid) {
             throw new AuthFailureError();
         }
 
-        new OK({ message: 'Login successfully', metadata: await AccessService.login(uid) });
+        new OK({ message: 'Login successfully', metadata: await AccessService.login(user) }).send(res);
     };
 }
 

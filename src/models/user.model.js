@@ -14,12 +14,15 @@ const userSchema = new Schema(
             type: String,
             required: true,
         },
+        user_email: {
+            type: String,
+        },
         user_phoneNumber: {
             type: String,
         },
         user_avatar: {
             type: String,
-            unique: true,
+            unique: false,
         },
         user_address: {},
         user_description: {
