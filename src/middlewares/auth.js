@@ -9,7 +9,6 @@ const authentication = async (req, res, next) => {
     }
 
     const decodedToken = await admin.auth().verifyIdToken(token);
-
     if (!decodedToken) {
         throw new ForbiddenRequest();
     }

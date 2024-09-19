@@ -1,5 +1,5 @@
 const userModel = require('../models/user.model');
-const { InternalServerError } = require('../constants/error.respone');
+const { InternalServerError, ConflictRequest } = require('../constants/error.respone');
 const { getDataFields } = require('../utils/dataTransform');
 
 const getUserFields = (data) => {
@@ -32,6 +32,28 @@ class AccessService {
         }
 
         return getUserFields(foundUser);
+    };
+
+    static signUp = async (user, name) => {
+        const { uid, email } = user;
+
+        const foundUser = await userModel.findOne({ user_uid: uid }).lean();
+
+        if (foundUser) {
+            throw new ConflictRequest();
+        }
+
+        const newUser = await userModel.create({
+            user_uid: uid,
+            user_name: name,
+            user_email: email,
+        });
+
+        if (!newUser) {
+            throw new InternalServerError();
+        }
+
+        return getUserFields(newUser);
     };
 }
 

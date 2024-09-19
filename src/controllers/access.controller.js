@@ -12,6 +12,17 @@ class AccessController {
 
         new OK({ message: 'Login successfully', metadata: await AccessService.login(user) }).send(res);
     };
+
+    signUp = async (req, res) => {
+        const { name } = req.body;
+        const user = req.user;
+
+        if (!user.uid) {
+            throw new AuthFailureError();
+        }
+
+        new OK({ message: 'Sign up successfully', metadata: await AccessService.signUp(user, name) }).send(res);
+    };
 }
 
 module.exports = new AccessController();
