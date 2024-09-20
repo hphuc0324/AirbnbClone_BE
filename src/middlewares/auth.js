@@ -13,7 +13,7 @@ const authentication = async (req, res, next) => {
         throw new ForbiddenRequest();
     }
 
-    req.user = { uid: decodedToken.uid, name: decodedToken.name, email: decodedToken.email };
+    req.user = decodedToken;
     next();
 };
 

@@ -12,11 +12,10 @@ const getUserFields = (data) => {
 };
 
 class AccessService {
-    static login = async (user) => {
+    static signIn = async (user) => {
         const { uid, name, email } = user;
 
         const foundUser = await userModel.findOne({ user_uid: uid }).lean();
-
         if (!foundUser) {
             const newUser = await userModel.create({
                 user_uid: uid,

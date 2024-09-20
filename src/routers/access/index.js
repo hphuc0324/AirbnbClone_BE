@@ -5,7 +5,7 @@ const { authentication } = require('../../middlewares/auth');
 
 const router = express.Router();
 
-router.post('/login', asyncHandler(authentication), asyncHandler(accessController.login));
+router.post('/signIn', asyncHandler(authentication), asyncHandler(accessController.signIn));
 router.post('/signUp', asyncHandler(authentication), asyncHandler(accessController.signUp));
 
 module.exports = router;
