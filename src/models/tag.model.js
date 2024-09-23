@@ -1,4 +1,5 @@
 const { Schema, default: mongoose, model } = require('mongoose');
+const Icon = require('./icon.model');
 
 const DOCUMENT_NAME = 'Tag';
 const COLLECTION_NAME = 'Tags';
