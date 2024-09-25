@@ -14,6 +14,7 @@ const authentication = async (req, res, next) => {
     }
 
     req.user = decodedToken;
+    console.log('decoded token::', decodedToken);
     next();
 };
 
