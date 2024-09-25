@@ -5,7 +5,7 @@ const { AuthFailureError } = require('../constants/error.respone');
 class AccessController {
     signIn = async (req, res) => {
         const user = req.user;
-        console.log('user', user);
+
         if (!user.uid) {
             throw new AuthFailureError();
         }
