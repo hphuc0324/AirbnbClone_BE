@@ -8,7 +8,7 @@ class TagsService {
             .select({ ...unSelect })
             .populate({
                 path: 'tag_icon',
-                select: ['icon_url'],
+                select: ['icon_url', '-_id'],
             })
             .lean()
             .exec();
