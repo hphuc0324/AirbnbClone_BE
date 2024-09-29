@@ -1,5 +1,7 @@
 const { Schema, model } = require('mongoose');
 
+const Hobby = require('./hobby.model');
+
 const COLLECTION_NAME = 'User';
 const DOCUMENT_NAME = 'User';
 
@@ -22,7 +24,7 @@ const userSchema = new Schema(
         },
         user_avatar: {
             type: String,
-            unique: false,
+            default: '',
         },
         user_address: {},
         user_description: {

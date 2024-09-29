@@ -1,4 +1,4 @@
-const { Api404Error, CustomError } = require('../constants/error.respone');
+const { Api404Error, CustomError, InternalServerError } = require('../constants/error.respone');
 const { NOT_FOUND } = require('../constants/httpStatusCode');
 const userModel = require('../models/user.model');
 
@@ -11,6 +11,24 @@ class UserService {
         }
 
         return user;
+    };
+
+    static updateUser = async ({ uid, fieldsToUpdate }) => {
+        const updatedUser = await userModel
+            .findOneAndUpdate(
+                { user_uid: uid },
+                {
+                    $set: fieldsToUpdate,
+                },
+                { new: true },
+            )
+            .lean();
+
+        if (!updatedUser) {
+            throw new InternalServerError();
+        }
+
+        return updatedUser;
     };
 }
 
