@@ -66,5 +66,149 @@
     {
         "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1725622457/Airbnb-Clone/Svg%20Icons/Tea-Cup--Streamline-Solar-Ar_jry8mr.svg",
         "icon_label": "Breakfasts"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962309/Airbnb-Clone/Svg%20Icons/Pet-Paw--Streamline-Plump_mwh8p8.svg",
+        "icon_label": "Pet"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962310/Airbnb-Clone/Svg%20Icons/Bag--Streamline-Unicons-Thinline_kudfgc.svg",
+        "icon_label": "Luggage"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962309/Airbnb-Clone/Svg%20Icons/Graduation-Cap--Streamline-Iconoir_gycx74.svg",
+        "icon_label": "Graduate hat"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962309/Airbnb-Clone/Svg%20Icons/Book-Open--Streamline-Mynaui_zvp9u2.svg",
+        "icon_label": "Book open"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962309/Airbnb-Clone/Svg%20Icons/Clock--Streamline-Bootstrap_sciwuu.svg",
+        "icon_label": "Clock"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962307/Airbnb-Clone/Svg%20Icons/Message--Streamline-Tabler_idwcw8.svg",
+        "icon_label": "Message"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962308/Airbnb-Clone/Svg%20Icons/Light-Bulb--Streamline-Heroicons-Outline_zpm2cf.svg",
+        "icon_label": "Light bulb"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962308/Airbnb-Clone/Svg%20Icons/Heart--Streamline-Heroicons-Outline_tax92u.svg",
+        "icon_label": "Heart"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962307/Airbnb-Clone/Svg%20Icons/Geography--Streamline-Atlas_wwrzcp.svg",
+        "icon_label": "World"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962308/Airbnb-Clone/Svg%20Icons/Music-Notes--Streamline-Phosphor_g9t9a0.svg",
+        "icon_label": "Music note"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1727962307/Airbnb-Clone/Svg%20Icons/Balloon--Streamline-Bootstrap_hzivxa.svg",
+        "icon_label": "Balloon"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014795/Airbnb-Clone/Svg%20Icons/Chess-King--Streamline-Core_loej66.svg",
+        "icon_label": "Chess"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014464/Airbnb-Clone/Svg%20Icons/Yoga--Streamline-Iconoir_larquh.svg",
+        "icon_label": "Yoga"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014462/Airbnb-Clone/Svg%20Icons/Tv--Streamline-Heroicons-Outline_es4keo.svg",
+        "icon_label": "TV"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014460/Airbnb-Clone/Svg%20Icons/Target-Bullseye--Streamline-Atlas_mmajcq.svg",
+        "icon_label": "Achery"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014460/Airbnb-Clone/Svg%20Icons/Tools-Kitchen--Streamline-Tabler_qh29oa.svg",
+        "icon_label": "Kithcen tools"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014460/Airbnb-Clone/Svg%20Icons/Theater--Streamline-Carbon_ra8wyi.svg",
+        "icon_label": "Comedy"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014460/Airbnb-Clone/Svg%20Icons/Soccer-Ball--Streamline-Phosphor_ompv2p.svg",
+        "icon_label": "Football"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014460/Airbnb-Clone/Svg%20Icons/Table-Tennis-Ping-Pong--Streamline-Atlas_ap7zkx.svg",
+        "icon_label": "Table tennis"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014459/Airbnb-Clone/Svg%20Icons/Puzzle--Streamline-Iconoir_tam29h.svg",
+        "icon_label": "Puzzle"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014458/Airbnb-Clone/Svg%20Icons/Leaf--Streamline-Solar-Ar_jigmoe.svg",
+        "icon_label": "Leaf"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014458/Airbnb-Clone/Svg%20Icons/Chip--Streamline-Carbon_vq5spz.svg",
+        "icon_label": "Chip"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014458/Airbnb-Clone/Svg%20Icons/Microphone-Stage-Light--Streamline-Phosphor_ca9jxg.svg",
+        "icon_label": "Micro"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014458/Airbnb-Clone/Svg%20Icons/Gamepad--Streamline-Solar-Ar_h7qt6m.svg",
+        "icon_label": "Gamepad"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014458/Airbnb-Clone/Svg%20Icons/Canoe--Streamline-Atlas_xgqbj0.svg",
+        "icon_label": "Canoe"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014456/Airbnb-Clone/Svg%20Icons/Building-Apartment--Streamline-Phosphor_ysyf1j.svg",
+        "icon_label": "Architecture"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014456/Airbnb-Clone/Svg%20Icons/Design-Tool-Magic-Wand--Streamline-Ultimate_c76fwb.svg",
+        "icon_label": "Star stick"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014457/Airbnb-Clone/Svg%20Icons/Card-Game-Heart--Streamline-Ultimate_yqozqw.svg",
+        "icon_label": "Card"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014456/Airbnb-Clone/Svg%20Icons/Bowling-Set--Streamline-Ultimate_yq1rpa.svg",
+        "icon_label": "Bowling"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014456/Airbnb-Clone/Svg%20Icons/Basketball--Streamline-Phosphor_t2wp6n.svg",
+        "icon_label": "Basketball"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728014457/Airbnb-Clone/Svg%20Icons/Football--Streamline-Phosphor_xn98ac.svg",
+        "icon_label": "Baseball"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728016696/Airbnb-Clone/Svg%20Icons/Mountains-Sun--Streamline-Unicons_xbuflr.svg",
+        "icon_label": "Mountain"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728016696/Airbnb-Clone/Svg%20Icons/Noodles--Streamline-Atlas_fiy6aq.svg",
+        "icon_label": "Noodles"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728016695/Airbnb-Clone/Svg%20Icons/Film-Slate--Streamline-Phosphor_hvggwr.svg",
+        "icon_label": "Film"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728016695/Airbnb-Clone/Svg%20Icons/Camera-1--Streamline-Plump_mjmpuz.svg",
+        "icon_label": "Camera"
+    },
+    {
+        "icon_url": "https://res.cloudinary.com/cloudinary-hphucc0324/image/upload/v1728017207/Airbnb-Clone/Svg%20Icons/Bag-4--Streamline-Solar-Ar_uvobne.svg",
+        "icon_label": "Shopping bag"
     }
 ]

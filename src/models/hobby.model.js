@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const Icon = require('./icon.model');
 
 const DOCUMENT_NAME = 'Hobby';
 const COLLECTION_NAME = 'Hobbies';

@@ -32,8 +32,13 @@ const userSchema = new Schema(
         },
         user_profileField: [
             {
-                field: {},
-                value: {},
+                field: {
+                    type: Schema.ObjectId,
+                    ref: 'ProfileLine',
+                },
+                value: {
+                    type: String,
+                },
             },
         ],
         user_hobbies: [

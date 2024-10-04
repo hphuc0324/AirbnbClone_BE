@@ -1,0 +1,72 @@
+[
+    {
+        "profileField_title": "Where did you go to school?",
+        "profileField_placeholder": "Where I went to school",
+        "profileField_description": "Whether it’s home school, high school, or trade school, name the school that made you who you are.",
+        "profileField_icon": "66fea6087d95e3c2c787cc2c",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "Languages you speak",
+        "profileField_placeholder": "Languages I speak",
+        "profileField_description": "Share the languages you speak fluently. Example: English, Spanish, or Klingon.",
+        "profileField_icon": "66fea6087d95e3c2c787cc6f",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "What do you do for work?",
+        "profileField_placeholder": "My work",
+        "profileField_description": "Tell us what your profession is. If you don’t have a traditional job, tell us your life’s calling. Example: Nurse, parent to four kids, or retired surfer.",
+        "profileField_icon": "66fea6087d95e3c2c787cc16",
+        "profileField_limit": 20
+    },
+    {
+        "profileField_title": "Where you live",
+        "profileField_placeholder": "Where I live",
+        "profileField_description": "Share the city or town you call home. Example: San Francisco, CA or a small town in the Midwest.",
+        "profileField_icon": "66fea6087d95e3c2c787cca9",
+        "profileField_limit": 100
+    },
+    {
+        "profileField_title": "What was your favorite song in high school?",
+        "profileField_placeholder": "My favorite song in high school",
+        "profileField_description": "However embarrassing, share the tune you listened to on repeat as a teenager.",
+        "profileField_icon": "66fea6087d95e3c2c787ccb9",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "What are you obsessed with?",
+        "profileField_placeholder": "I'm obsessed with",
+        "profileField_description": "Share whatever you can’t get enough of—in a good way. Example: Baking rosemary focaccia.",
+        "profileField_icon": "66fea6087d95e3c2c787cc9c",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "What’s a fun fact about you?",
+        "profileField_placeholder": "My fun fact",
+        "profileField_description": "Share something unique or unexpected about you. Example: I was in a music video or I’m a juggler.",
+        "profileField_icon": "66fea6087d95e3c2c787cc80",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "What would your biography title be?",
+        "profileField_placeholder": "My biography title would be",
+        "profileField_description": "If someone wrote a book about your life, what would they call it? Example: Born to Roam or Chronicles of a Dog Mom.",
+        "profileField_icon": "66fea6087d95e3c2c787cc3b",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "What do you spend too much time doing?",
+        "profileField_placeholder": "I spend too much time",
+        "profileField_description": "Share an activity or hobby you spend lots of free time on. Example: Watching cat videos or playing chess.",
+        "profileField_icon": "66fea6087d95e3c2c787cc54",
+        "profileField_limit": 40
+    },
+    {
+        "profileField_title": "Do you have any pets in your life?",
+        "profileField_placeholder": "Pets",
+        "profileField_description": "Share any pets you have and their names. Example: My calico cat Whiskers, or Leonardo my speedy turtle.",
+        "profileField_icon": "66fea6087d95e3c2c787cc09",
+        "profileField_limit": 40
+    }
+]

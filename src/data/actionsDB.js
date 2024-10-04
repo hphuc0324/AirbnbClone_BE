@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const { host, name } = require('../configs/config.mongodb');
 const dataField = require('./dataField');
 const tagModel = require('../models/tag.model');
+const iconModel = require('../models/icon.model');
+const userModel = require('../models/user.model');
 
 const connectString = `${host}/${name}?retryWrites=true&w=majority`;
 
@@ -102,9 +104,26 @@ const run = async () => {
 };
 
 // const testRetrieving = async () => {
-//     const data = await tagModel.find().populate({ path: 'tag_icon', select: ['icon_label', 'icon_url'] });
+//     // const data = await iconModel.find({});
 
-//     console.log(data);
+//     // console.log(data);
+//     // process.exit();
+
+//     const updatedUser = await userModel.findOneAndUpdate(
+//         {
+//             user_uid: 'Gg5ymExF4zdmOxfVzT3NUnsRYHk2',
+//         },
+//         {
+//             $push: {
+//                 user_hobbies: '66ff75846b0e0efb36d678cd',
+//             },
+//         },
+//         { new: true },
+//     );
+
+//     console.log(updatedUser);
+
+//     process.exit();
 // };
 
 // testRetrieving();

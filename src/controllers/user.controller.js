@@ -1,7 +1,7 @@
 const { ForbiddenRequest, BadRequest } = require('../constants/error.respone');
 const { OK } = require('../constants/success.respone');
 const UserService = require('../services/user.service');
-const { getDataFields } = require('../utils/dataTransform');
+const { selectData } = require('../utils/dataTransform');
 
 class UserController {
     getPersonalInfo = async (req, res) => {
@@ -11,24 +11,19 @@ class UserController {
             throw new ForbiddenRequest();
         }
 
-        const user = await UserService.getUserByUid({ uid: uid });
+        const select = selectData(['user_name', 'user_email', 'user_phoneNumber', 'user_address']);
 
-        const userInfo = getDataFields({
-            fields: ['user_name', 'user_email', 'user_phoneNumber', 'user_address'],
-            data: user,
-        });
+        const user = await UserService.getUserByUid({ uid: uid, select: select });
 
         new OK({
             message: 'Get personal information successfully',
-            metadata: userInfo,
+            metadata: user,
         }).send(res);
     };
 
     updatePersonalInfo = async (req, res) => {
         const { uid } = req.user;
         const { name, phoneNumber, address } = req.body;
-
-        console.log('req.body::', req.body);
 
         if (!name || !phoneNumber || !address) {
             throw new BadRequest();
@@ -53,16 +48,20 @@ class UserController {
             throw new ForbiddenRequest();
         }
 
-        const user = await UserService.getUserByUid({ uid });
+        const select = selectData([
+            'user_uid',
+            'user_name',
+            'user_avatar',
+            'user_description',
+            'user_profileField',
+            'user_hobbies',
+        ]);
 
-        const userProfile = getDataFields({
-            fields: ['user_name', 'user_avatar', 'user_description', 'user_profileField', 'user_hobbies'],
-            data: user,
-        });
+        const user = await UserService.getUserByUid({ uid, select });
 
         new OK({
             message: 'Get user profile successfully',
-            metadata: userProfile,
+            metadata: user,
         }).send(res);
     };
 }
