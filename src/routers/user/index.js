@@ -8,5 +8,6 @@ router.get('/me', asyncHandler(authentication), asyncHandler(userController.getP
 router.put('/me', asyncHandler(authentication), asyncHandler(userController.updatePersonalInfo));
 
 router.get('/profile/:uid', asyncHandler(userController.getUserProfile));
+router.put('/profile/:uid', asyncHandler(authentication), asyncHandler(userController.updateUserProfile));
 
 module.exports = router;

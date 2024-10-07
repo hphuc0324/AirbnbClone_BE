@@ -44,6 +44,46 @@ class UserService {
 
         return updatedUser;
     };
+
+    static updateUserProfileField = async ({ uid, profileField }) => {
+        let updatedUser = await userModel.findOneAndUpdate(
+            {
+                user_uid: uid,
+                'user_profileField.field': profileField._id,
+            },
+            {
+                $set: {
+                    'user_profileField.$.value': profileField.value,
+                },
+            },
+            {
+                new: true,
+            },
+        );
+
+        if (!updatedUser) {
+            updatedUser = await userModel.findOneAndUpdate(
+                { user_uid: uid },
+                {
+                    $push: {
+                        user_profileField: {
+                            field: profileField._id,
+                            value: profileField.value,
+                        },
+                    },
+                },
+                {
+                    new: true,
+                },
+            );
+        }
+
+        if (!updatedUser) {
+            throw new InternalServerError();
+        }
+
+        return updatedUser;
+    };
 }
 
 module.exports = UserService;

@@ -64,6 +64,25 @@ class UserController {
             metadata: user,
         }).send(res);
     };
+
+    updateUserProfile = async (req, res) => {
+        const { uid } = req.user;
+
+        const { profileField, hobbies } = req.body;
+
+        if (!profileField && !hobbies) {
+            throw new BadRequest();
+        }
+
+        if (profileField) {
+            new OK({
+                message: 'Update user profile fields successfully',
+                metadata: await UserService.updateUserProfileField({ uid, profileField }),
+            }).send(res);
+        } else {
+            console.log('User Controller::update user profile hobbies');
+        }
+    };
 }
 
 module.exports = new UserController();
