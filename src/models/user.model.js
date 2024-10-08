@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const Hobby = require('./hobby.model');
+const ProfileField = require('./profileField.model');
 
 const COLLECTION_NAME = 'User';
 const DOCUMENT_NAME = 'User';
@@ -34,11 +35,12 @@ const userSchema = new Schema(
             {
                 field: {
                     type: Schema.ObjectId,
-                    ref: 'ProfileLine',
+                    ref: 'ProfileField',
                 },
                 value: {
                     type: String,
                 },
+                _id: false,
             },
         ],
         user_hobbies: [

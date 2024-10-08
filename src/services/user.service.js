@@ -17,6 +17,14 @@ class UserService {
                     select: ['icon_url', '-_id'],
                 },
             })
+            .populate({
+                path: 'user_profileField.field',
+                select: ['profileField_icon', 'profileField_placeholder', '-_id'],
+                populate: {
+                    path: 'profileField_icon',
+                    select: ['icon_url', '-_id'],
+                },
+            })
             .lean()
             .exec();
 
@@ -43,6 +51,27 @@ class UserService {
         }
 
         return updatedUser;
+    };
+
+    static getUserProfile = async ({ uid }) => {
+        const foundUser = await userModel
+            .findOne({
+                user_uid: uid,
+            })
+            .populate({
+                path: 'user_profileField',
+                select: ['profileField_icon', 'profileField_placeholder', '-__id'],
+                populate: {
+                    path: 'profileField_icon',
+                    select: ['icon_url', '-_id'],
+                },
+            });
+
+        if (!foundUser) {
+            throw new Api404Error('User not found');
+        }
+
+        return foundUser;
     };
 
     static updateUserProfileField = async ({ uid, profileField }) => {
