@@ -19,7 +19,7 @@ class UserService {
             })
             .populate({
                 path: 'user_profileField.field',
-                select: ['profileField_icon', 'profileField_placeholder', '-_id'],
+                select: ['profileField_icon', 'profileField_placeholder'],
                 populate: {
                     path: 'profileField_icon',
                     select: ['icon_url', '-_id'],
@@ -111,7 +111,20 @@ class UserService {
             throw new InternalServerError();
         }
 
-        return updatedUser;
+        return updatedUser.user_profileField;
+    };
+
+    static updateUserHobbies = async ({ uid, hobbies }) => {
+        const foundUser = await userModel.findOne({ user_uid: uid });
+
+        if (!foundUser) {
+            throw new Api404Error('User not found');
+        }
+
+        foundUser.user_hobbies = hobbies;
+        await foundUser.save();
+
+        return foundUser.user_hobbies;
     };
 }
 

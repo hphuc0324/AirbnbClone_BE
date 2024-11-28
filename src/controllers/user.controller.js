@@ -1,7 +1,17 @@
-const { ForbiddenRequest, BadRequest } = require('../constants/error.respone');
+const { ForbiddenRequest, BadRequest, InternalServerError } = require('../constants/error.respone');
 const { OK } = require('../constants/success.respone');
+const userModel = require('../models/user.model');
 const UserService = require('../services/user.service');
 const { selectData } = require('../utils/dataTransform');
+
+const USER_PROFILE = selectData([
+    'user_uid',
+    'user_name',
+    'user_avatar',
+    'user_description',
+    'user_profileField',
+    'user_hobbies',
+]);
 
 class UserController {
     getPersonalInfo = async (req, res) => {
@@ -48,16 +58,7 @@ class UserController {
             throw new ForbiddenRequest();
         }
 
-        const select = selectData([
-            'user_uid',
-            'user_name',
-            'user_avatar',
-            'user_description',
-            'user_profileField',
-            'user_hobbies',
-        ]);
-
-        const user = await UserService.getUserByUid({ uid, select });
+        const user = await UserService.getUserByUid({ uid, USER_PROFILE });
 
         new OK({
             message: 'Get user profile successfully',
@@ -75,13 +76,65 @@ class UserController {
         }
 
         if (profileField) {
-            new OK({
-                message: 'Update user profile fields successfully',
-                metadata: await UserService.updateUserProfileField({ uid, profileField }),
-            }).send(res);
+            await UserService.updateUserProfileField({ uid, profileField });
         } else {
-            console.log('User Controller::update user profile hobbies');
+            await UserService.updateUserHobbies({ uid, hobbies });
         }
+
+        new OK({
+            message: 'Update user profile fields successfully',
+            metadata: await UserService.getUserByUid({ uid, USER_PROFILE }),
+        }).send(res);
+    };
+
+    updateUserAvatar = async (req, res) => {
+        const { uid } = req.user;
+        const file = req.file;
+
+        if (!file) {
+            throw new BadRequest('File not found');
+        }
+
+        const foundUser = await userModel.findOneAndUpdate(
+            {
+                user_uid: uid,
+            },
+            {
+                user_avatar: file.path,
+            },
+            {
+                new: true,
+            },
+        );
+
+        if (!foundUser) {
+            throw new InternalServerError('Update user avatar failed');
+        }
+
+        new OK({
+            message: 'Update user avatar successfully',
+            metadata: foundUser.user_avatar,
+        }).send(res);
+    };
+
+    updateUserDescription = async (req, res) => {
+        const { uid } = req.user;
+        const { description } = req.body;
+
+        if (!description) {
+            throw new BadRequest();
+        }
+
+        const fieldsToUpdate = {
+            user_description: description,
+        };
+
+        await UserService.updateUser({ uid, fieldsToUpdate });
+
+        new OK({
+            message: 'Update user description successfully',
+            metadata: description,
+        }).send(res);
     };
 }
 
